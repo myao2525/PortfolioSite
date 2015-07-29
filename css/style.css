@@ -1,0 +1,341 @@
+.background{
+    background-image: url('../img/berry.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    display: table;
+}
+.background p{
+    color: white;
+    text-align: center;
+    display: table-cell;
+    vertical-align: center;
+}
+.daiya{
+    display: table-cell;
+    vertical-align: middle;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+    width: 1024px;
+    height: 768px;
+    background-image: url('../img/mao-daiya.png');
+    animation: fuwafuwa 5s infinite linear;
+    -webkit-animation-name:fuwafuwa; /* fuwafuwaっていうアニメーションをしてね！ */
+    -webkit-animation-duration:5s;
+    -webkit-animation-iteration-count:infinite;
+    /*-webkit-animation-direction:alternate;*/
+    -webkit-animation-timing-function:ease;
+}
+@-webkit-keyframes fuwafuwa {
+    0% {-webkit-transform:translate(0, 0);}
+    20% {-webkit-transform:translate(3px, 10px);}
+    40% {-webkit-transform:translate(-3px, -10px);}
+    60% {-webkit-transform:translate(-3px, 10px);}
+    80% {-webkit-transform:translate(3px, -10px);}
+    100% {-webkit-transform:translate(0, 0);}
+}
+.header{
+    z-index: 100;
+    position: fixed;
+    display: table;
+    width: 100%;
+    font-size: 30px;
+    color: white;
+    text-shadow:2px 2px 2px rgba(0,0,0,0.3);
+
+}
+
+.headerMenu{
+    position: absolute;
+    right: 0;
+    width: 430px;
+}
+.headerMenu::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.headerMenu li{
+    float: left;
+    margin-left: 20px;
+}
+.headerMenu a{
+    color: white;
+    position: relative;
+}
+.headerMenu a::after{
+    content:"";
+    height: 2px;
+    width: 0;
+    background: white;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transition:0.7s;
+}
+.headerMenu a:hover::after{
+    width: 100%;
+    left: 0;
+}
+.contents{
+    position: relative;
+    top: 700px;
+    width: 50%;
+}
+.contents li{
+    float: left;
+    background: white;
+    width: 683px;
+    height: 700px;
+    text-align: center;
+    line-height: 60px;
+    color: white;
+    font-size: 20px;
+}
+.contact ul{
+    width: 1366px;
+}
+.firstWrapper{
+    background: white;
+    width: 1366px;
+    height: 700px;
+}
+.leftWrapper{
+    background: white;
+    width: 683px;
+    height: 700px;
+    margin-top: 0;
+}
+.aboutUp{
+    background: white;
+    width: 683px;
+    height: 150px;
+    display: table;
+}
+.aboutUp p{
+    display: table-cell;
+    width: 683px;
+    float: left;
+    color: rgb(58, 21, 12);
+    text-align: center;
+    vertical-align: middle;
+    font-size: 35px;
+}
+.aboutDown{
+    background-image: url('../img/s-girl.jpg');
+    width: 683px;
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+    display: table;
+}
+.aboutDown::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.rightWrapper{
+    background: white;
+    width: 683px;
+    height: 700px;
+}
+.skill{
+    background-image: url('../img/pc.jpg');
+    width: 683px;
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    display: table;
+}
+.skill::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.cover p{
+    display: table-cell;
+    width: 683px;
+    float: left;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 35px;
+}
+.cover{
+    display: table-cell;
+    background:rgba(0,0,0,0.3);
+    vertical-align: middle;
+    text-align: center;
+    width: 50%;
+    height: 450px;
+}
+.act{
+    height: 250px;
+}
+.act:hover .actBlock{
+    transform: translateX(-100%);
+}
+.actBlock{
+    background: pink;
+    width: 50%;
+    height:250px;
+    margin-left: 50%;
+    transition:0.8s;
+}
+.actWrapper{
+    background: #F471A2;
+    width: 1366px;
+    height: 400px;
+}
+.actWrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.actContent{
+    display: table;
+    float: left;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-size:cover;
+    background-position: center;
+    margin: 60px;
+}
+.actContent a{
+    display: block;
+    border-radius: 50%;
+}
+.actContent p:hover{
+    opacity: 1;
+}
+.actContent p{
+    font-size: 20px;
+    color: rgb(248, 225, 177);
+    opacity: 0;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    transition:0.5s;
+    border-radius: 50%;
+}
+.girlWrapper{
+    background-image: url('../img/phone.jpg');
+    width: 1366px;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    display: table;
+}
+.girl{
+    display: table;
+    width: 1366px;
+    height: 600px;
+    background: rgba(0,0,0,0.3);
+}
+.girl p{
+    display: table-cell;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 auto;
+    font-size: 30px;
+}
+.contact{
+    width: 1366px;
+    height: 150px;
+    background: rgba(0,0,0,0.3);
+}
+.contact p{
+    color: rgb(58, 21, 12);
+    font-size: 30px;
+    text-align: center;
+}
+.contact li{
+    float: left;
+    background: #F471A2;
+    width: 250px;
+    height: 150px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-left: 250px;
+    transition:all 0.7s;
+}
+.contact ul{
+    background: white;
+    z-index: 5;
+    display: table-cell;
+    margin-top: 450px;
+    width: 500px;
+    height: 150px;
+    transition:all 0.7s;
+}
+
+.contact ul::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.contact:hover li{
+    margin-left:0px;
+}
+.contact i{
+    opacity: 0;
+    color: white;
+    font-size: 40px;
+}
+.contact:hover i{
+    opacity: 1;
+}
+.footer{
+    background: #F471A2;
+    width: 1366px;
+    height: 90px;
+}
+.footer p{
+    color: white;
+    text-align: center;
+    display: table-cell;
+
+}
+
+/*pagetop　ボタン*/
+#page-top{
+    width:50px;
+    height:50px;
+    display:none;
+    position:fixed;
+    right:16px;
+    bottom:16px;
+}
+#page-top p{
+    margin:0;
+    padding:0;
+    text-align:center;
+    font-size: 120px;
+    -webkit-transition:all 0.3s;
+    -moz-transition:all 0.3s;
+    transition:all 0.3s;
+    /*位置*/
+    position:fixed;
+    right:16px;
+    bottom:16px;
+}
+#page-top p:hover{
+    background:none;
+}
+#move-page-top{
+    color:white;
+    line-height:50px;
+    text-decoration:none;
+    display:block;
+    cursor:pointer;
+}
