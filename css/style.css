@@ -14,28 +14,24 @@
     vertical-align: center;
 }
 .daiya{
-    display: table-cell;
-    vertical-align: middle;
-    background-size: cover;
-    background-position: center;
-    opacity: 0.9;
-    width: 1024px;
-    height: 768px;
-    background-image: url('../img/mao-daiya.png');
+    position: absolute;
     animation: fuwafuwa 5s infinite linear;
-    -webkit-animation-name:fuwafuwa; /* fuwafuwaっていうアニメーションをしてね！ */
-    -webkit-animation-duration:5s;
-    -webkit-animation-iteration-count:infinite;
-    /*-webkit-animation-direction:alternate;*/
-    -webkit-animation-timing-function:ease;
+    top: 50%;
+    left: 50%;
+    margin-left: -195px;
+    margin-top: -137px;
 }
-@-webkit-keyframes fuwafuwa {
-    0% {-webkit-transform:translate(0, 0);}
-    20% {-webkit-transform:translate(3px, 10px);}
-    40% {-webkit-transform:translate(-3px, -10px);}
-    60% {-webkit-transform:translate(-3px, 10px);}
-    80% {-webkit-transform:translate(3px, -10px);}
-    100% {-webkit-transform:translate(0, 0);}
+.daiya img{
+    width: 390px;
+    height: 274px;
+}
+@keyframes fuwafuwa {
+    0% {transform:translate(0, 0);}
+    20% {transform:translate(3px, 10px);}
+    40% {transform:translate(-3px, -10px);}
+    60% {transform:translate(-3px, 10px);}
+    80% {transform:translate(3px, -10px);}
+    100% {transform:translate(0, 0);}
 }
 .header{
     z-index: 100;
@@ -51,7 +47,8 @@
 .headerMenu{
     position: absolute;
     right: 0;
-    width: 430px;
+    width: 520px;
+    font-size: 40px;
 }
 .headerMenu::after{
     content:"";
@@ -72,7 +69,7 @@
     width: 0;
     background: white;
     position: absolute;
-    top: 40px;
+    top: 50px;
     left: 50%;
     transition:0.7s;
 }
@@ -250,6 +247,13 @@
     font-size: 20px;
     font-weight:bold;
 }
+.sub{
+    padding: 0 5px;
+    color: rgba(58, 21, 12, 0.7);
+    margin-top:20px;
+    font-size: 18px;
+    word-break: normal;
+}
 .actRect2{
     background-size: cover;
     background-position: center;
@@ -309,59 +313,30 @@
     width: 100%;
     height: 150px;
     background: rgba(0,0,0,0.3);
+    color: white;
 }
 .contact p{
     color: rgb(58, 21, 12);
     font-size: 30px;
     text-align: center;
-    font-weight:bolder;
 }
-.contact li{
-    float: left;
-    background: #F471A2;
-    width: 200px;
-    height: 150px;
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    margin-left: 0px;
-    transition:all 0.7s;
-}
-.contact ul{
-    background: none;
-    z-index: 5;
-    display: table-cell;
-    margin-top: 450px;
-    height: 150px;
-    transition:all 0.7s;
-}
-
 .contact ul::after{
     content:"";
     display: block;
     clear: both;
 }
-.contact:hover li{
-    margin-left:250px;
-}
 .contact i{
-    opacity: 0;
+    margin-right: 10px;
     color: white;
     font-size: 40px;
 }
-.contact:hover i{
-    opacity: 1;
-}
 .footer{
-    background: #F471A2;
-    width: 100%;
-    height: 90px;
+    background: white;
 }
 .footer p{
-    color: white;
+    color: rgb(58, 21, 12);
     text-align: center;
-    display: table-cell;
-
+    line-height: 30px;
 }
 
 /*pagetop　ボタン*/
@@ -370,7 +345,7 @@
     height:50px;
     display:none;
     position:fixed;
-    right:16px;
+    right: 76px;
     bottom:16px;
 }
 #page-top p{
@@ -381,16 +356,12 @@
     -webkit-transition:all 0.3s;
     -moz-transition:all 0.3s;
     transition:all 0.3s;
-    /*位置*/
-    position:fixed;
-    right:16px;
-    bottom:16px;
 }
 #page-top p:hover{
     background:none;
 }
 #move-page-top{
-    color:white;
+    color: rgba(236, 135, 61, 0.99);
     line-height:50px;
     text-decoration:none;
     display:block;
