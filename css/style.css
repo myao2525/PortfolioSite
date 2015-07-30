@@ -123,7 +123,6 @@
 .aboutUp p{
     display: table-cell;
     width: 100%;
-    float: left;
     text-align: center;
     vertical-align: middle;
     color: rgb(58, 21, 12);
