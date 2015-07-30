@@ -114,15 +114,28 @@
     width: 100%;
     height: 150px;
     display: table;
-}
-.aboutUp h1{
-    display: table-cell;/*
-    width: 683px;*/
+}/*
+.aboutUp::after{
+    content:"";
+    display: block;
+    clear: both;
+}*/
+.aboutUp p{
+    display: table-cell;
+    width: 100%;
     float: left;
-    color: rgb(58, 21, 12);
     text-align: center;
     vertical-align: middle;
+    color: rgb(58, 21, 12);
     font-size: 40px;
+    font-weight:bolder;
+}
+.aboutUp h2{
+    display: table-cell;
+    color: rgba(236, 135, 61, 0.99);
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
     font-weight:bolder;
 }
 .aboutUp::after{
@@ -130,6 +143,12 @@
     width: 100%;
     height: 2px;
     background: black;
+}
+#mozi{
+    color: rgba(236, 135, 61, 0.99);
+}
+#small{
+    font-size: 20px;
 }
 .aboutDown{
     background-image: url('../img/s-girl.jpg');
@@ -173,7 +192,7 @@
 }
 .cover{
     display: table-cell;
-    background:rgba(0,0,0,0.3);
+    background:rgba(0,0,0,0.4);
     vertical-align: middle;
     text-align: center;
     width: 100%;
@@ -261,12 +280,13 @@
     background: rgba(0,0,0,0.3);
 }
 .girl p{
+    margin-top:20px;
     display: table-cell;
     color: white;
     text-align: center;
     vertical-align: middle;
     margin: 0 auto;
-    font-size: 30px;
+    font-size: 40px;
 }
 .contact{
     width: 100%;
