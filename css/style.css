@@ -228,7 +228,57 @@
 .actWrapper li{
     width: 234px;
 }
-.actRect1,
+
+.actRect1{
+    background-image: url('../img/circlepage-1.jpg');
+    width: 100%;
+    height: 234px;
+    background-size: cover;
+    background-position: center;
+    display: table;
+}
+.actRect2{
+    background-image: url('../img/circlepage-2.jpg');
+    width: 100%;
+    height: 234px;
+    background-size: cover;
+    background-position: center;
+    display: table;
+}
+.actRect3{
+    background-image: url('../img/b-left1.jpg');
+    width: 100%;
+    height: 234px;
+    background-size: cover;
+    background-position: center;
+    display: table;
+}
+.actRect4{
+    background-image: url('../img/b-right.jpg');
+    width: 100%;
+    height: 234px;
+    background-size: cover;
+    background-position: center;
+    display: table;
+}
+.actCover p{
+    display: table-cell;
+    width: 100%;
+    float: left;
+    color: #42210B;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 35px;
+}
+.actCover{
+    display: table-cell;
+    background:rgba(255,255,255,0.4);
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+/*.actRect1,
 .actRect2{
     height: 234px;
 }
@@ -236,7 +286,7 @@
     background: white;
     display: table;
     width: 100%;
-}
+}*/
 .actMozi{
     display: table-cell;
     text-align: center;
@@ -254,10 +304,10 @@
     font-size: 18px;
     word-break: normal;
 }
-.actRect2{
+/*.actRect2{
     background-size: cover;
     background-position: center;
-}
+}*/
 /*.actContent{
     display: table;
     float: left;
