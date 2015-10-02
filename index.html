@@ -9,9 +9,18 @@
     <script type="text/javascript" src="./js/prefixfree.min.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="./js/to-top.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 <body>
-
+    <!-- loading -->
+<div id="loader-bg">
+  <div id="loader">
+    <img src="img-loading.gif" width="80" height="80" alt="Now Loading..." />
+    <p>Now Loading...</p>
+  </div>
+</div>
+<div id="wrap">
+    <!-- loading後に表示させる内容 -->
     <div class="background">
         <div class="daiya">
             <img src="./img/mao-logo2.png" alt="">
@@ -114,57 +123,7 @@
                 </a>
             </li>
         </ul>
-<!--         <ul class="actWrapper">
-            <li>
-                <div class="actRect1">
-                    <div class="actMozi">
-                        <p><span id="mozi">01</span></p>
-                        <p>survey page1</p>
-                        <p><div class="sub">It is the questionneire result of the university student.</div></p>
-                    </div>
-                </div>
-                <a href="./img/circlepage-1.jpg">
-                    <div class="actRect2" style="background-image:url(./img/circlepage-1.jpg)"></div>
-                </a>
-            </li>
-            <li>
-                <div class="actRect1">
-                    <div class="actMozi">
-                        <p><span id="mozi">02</span></p>
-                        <p>survey page2</p>
-                        <p><div class="sub">It is the questionneire result of the university student.</div></p>
-                    </div>
-                </div>
-                <a href="./img/circlepage-2.jpg">
-                    <div class="actRect2" style="background-image:url(./img/circlepage-2.jpg)"></div>
-                </a>
-            </li>
-            <li>
-                <div class="actRect1">
-                    <div class="actMozi">
-                        <p><span id="mozi">03</span></p>
-                        <p>beauty page1</p>
-                        <p><div class="sub">It is the questionneire result of the university student.</div></p>
-                    </div>
-                </div>
-                <a href="./img/b-left1.jpg">
-                    <div class="actRect2" style="background-image:url(./img/b-left1.jpg)"></div>
-                </a>
-            </li>
-            <li>
-                <div class="actRect1">
-                    <div class="actMozi">
-                        <p><span id="mozi">04</span></p>
-                        <p>beauty page2</p>
-                        <p><div class="sub">It is the questionneire result of the university student.</div></p>
-                    </div>
-                </div>
-                <a href="./img/b-right.jpg">
-                    <div class="actRect2" style="background-image:url(./img/b-right.jpg)"></div>
-                </a>
-            </li>
-        </ul>
- -->        <div class="girlWrapper">
+        <div class="girlWrapper">
             <div class="girl">
             <p><span id="mozi">T</span>ha<span id="mozi">n</span>k you v<span id="mozi">i</span>ew m<span id="mozi">y</span> pa<span id="mozi">g</span>e.</br>
                 <span id="small">Please contact me if you want to know more my activity.<br></span>
@@ -181,5 +140,7 @@
             <p><a id="move-page-top">▲</a></p>
         </div>
     </div>
+    <!-- loading mach -->
+</div>
 </body>
 </html>
