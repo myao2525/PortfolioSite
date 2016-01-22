@@ -5,7 +5,6 @@
     background-size: cover;
     background-position: center;
     position: fixed;
-    display: table;
 }
 .background p{
     color: white;
