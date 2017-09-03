@@ -80,7 +80,6 @@
     position: relative;
     top: 700px;
     width: 100%;
-    display: table-cell;
 }
 .firstWrapper li{
     float: left;
