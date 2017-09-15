@@ -45,9 +45,10 @@
 
 .headerMenu{
     position: absolute;
-    right: 0;
-    width: 520px;
     font-size: 40px;
+    width: 100%;
+    text-align: right;
+    padding-left: 50%;
 }
 .headerMenu::after{
     content:"";
@@ -56,7 +57,7 @@
 }
 .headerMenu li{
     float: left;
-    margin-left: 20px;
+    margin-left: 25px;
 }
 .headerMenu a{
     color: white;
